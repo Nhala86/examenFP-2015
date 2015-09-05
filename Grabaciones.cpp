@@ -15,7 +15,7 @@ bool solapan(const tGrabacion & grabacion1, tGrabacion & grabacion2){
 
 bool insertar(tListaGrabaciones & listaGrabaciones, tGrabacion & grabacion){
 	bool esInsertado = false;
-	if(!solapan && !esInsertado){
+	if(!solapan && !esInsertado && listaGrabaciones.contador != MAX_CAPACIDAD){
 		listaGrabaciones.grabacion[listaGrabaciones.contador] = grabacion;
 		listaGrabaciones.contador++;
 		esInsertado = true;

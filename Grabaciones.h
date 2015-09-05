@@ -3,6 +3,7 @@
 
 #include"Listaprogramas.h"
 
+const int MAX_CAPACIDAD = 20;
 
 typedef struct{
 	tListaProgramas listaProgramas;
